@@ -7,3 +7,7 @@ dataset/candidates/
 
 # Cache de rótulos gerado pelo YOLOv5
 *.cache
+
+# YOLOv5, dataset e resultados baixados/gerados pelo notebook ao rodar fora do Colab
+notebooks/content/
+.venv/

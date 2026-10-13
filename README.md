@@ -20,6 +20,18 @@ O passo a passo completo, os resultados e as conclusões estão no notebook. Est
 
 Abra o notebook pelo link **Abrir no Colab** acima, selecione um ambiente com GPU (*Ambiente de execução → Alterar o tipo de ambiente de execução → GPU T4*) e execute todas as células. O notebook baixa o dataset deste repositório e uma versão fixa do YOLOv5. Não é preciso acesso ao nosso Google Drive.
 
+### Alternativa: Windows com GPU NVIDIA
+
+Para treinar num PC próprio, abra o PowerShell e rode, nesta ordem:
+
+```powershell
+irm https://raw.githubusercontent.com/Avila237/guilherme-kainan-fiap-fase6/main/scripts/windows/setup_windows.ps1 -OutFile setup_windows.ps1
+powershell -ExecutionPolicy Bypass -File setup_windows.ps1
+powershell -ExecutionPolicy Bypass -File "$HOME\fiap-fase6\scripts\windows\run_windows.ps1"
+```
+
+O `setup_windows.ps1` instala o que faltar (Git, Python 3.12, PyTorch com CUDA 12.6, YOLOv5 e Jupyter) em `%USERPROFILE%\fiap-fase6` e confirma que a GPU foi reconhecida. O `run_windows.ps1` executa o notebook inteiro e salva a cópia com as saídas em `notebooks\<nome>_executado.ipynb`. O notebook detecta sozinho se há GPU NVIDIA, GPU Apple (MPS) ou só CPU.
+
 ## Estrutura
 
 ```
@@ -31,7 +43,8 @@ Abra o notebook pelo link **Abrir no Colab** acima, selecione um ambiente com GP
 │   └── labels/            # um .txt por imagem, no formato YOLO
 ├── notebooks/             # notebooks das entregas
 └── scripts/
-    └── collect_images.py  # coleta das imagens e montagem do dataset (com testes)
+    ├── collect_images.py  # coleta das imagens e montagem do dataset (com testes)
+    └── windows/           # instalação e execução do notebook num PC Windows com GPU NVIDIA
 ```
 
 ## Dataset e licenças
