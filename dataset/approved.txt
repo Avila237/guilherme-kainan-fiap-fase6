@@ -1,0 +1,87 @@
+# Seleção final do dataset da Fase 6, aprovada em 13/10/2026 após triagem visual.
+# Formato: classe/arquivo.jpg [test]  # observação da triagem
+# 'test' fixa a imagem no conjunto de teste (casos difíceis escolhidos de propósito).
+
+# --- cow ---
+cow/flickr_17620516.jpg  # Família Charolês: touro, vaca e bezerro
+cow/flickr_139142406.jpg  # Holandesa de perfil contra céu azul
+cow/flickr_305771150.jpg  # Simental em pasto alpino
+cow/flickr_478545143.jpg  # 5 bovinos loiros, um rosto colado na lente
+cow/flickr_489745286.jpg  # Charolês com bezerros, arame farpado
+cow/flickr_865111526.jpg  # difícil: Highland com franja nos olhos, atrás de porteira
+cow/flickr_1028800171.jpg  # Cabeça vermelha e branca em close, corpo cortado
+cow/flickr_2061364843.jpg  # Vaca creme na costa rochosa, mar ao fundo
+cow/flickr_2261031493.jpg  # Novilho peludo cinza, muro de pedra
+cow/flickr_2362990045.jpg  # Jersey em close, capim na frente
+cow/flickr_2726734318.jpg  # difícil: Holandesas na palha, cortadas e sobrepostas
+cow/flickr_2839023335.jpg test  # difícil: Holandesas deitadas; a do fundo é malhada como dálmata
+cow/flickr_2853253491.jpg  # Cabeça de vaca ruiva em close
+cow/flickr_2902422030.jpg  # Holandesa em lente Holga, rebanho ao fundo
+cow/flickr_2949148067.jpg  # Vaca vermelha com chifres, outras ao fundo
+cow/flickr_2950008082.jpg  # Holandesa atrás de arame farpado
+cow/flickr_3051399801.jpg  # Bovino preto e branco com chifres contra o céu
+cow/flickr_3170376407.jpg test  # difícil: Zebu com garça no dorso, névoa (500×323)
+cow/flickr_3545012849.jpg  # Holandesa de cara branca, vista 3/4
+cow/flickr_3563343802.jpg  # Novilha holandesa inteira, de frente
+cow/flickr_3563365186.jpg  # 2 holandesas inteiras, separáveis
+cow/flickr_3563368630.jpg  # difícil: Manchas redondas tipo dálmata
+cow/flickr_4101214805.jpg  # Holandesa em 1º plano, ~8 bovinos atrás
+cow/flickr_4559469836.jpg  # 2 Hereford, luz de fim de tarde
+cow/flickr_5047413459.jpg  # difícil: 3 holandesas na frente, dezenas pequenas atrás (500×375)
+cow/flickr_6192414116.jpg  # Holandesa de frente, rebanho atrás
+cow/flickr_6257904393.jpg  # Cabeça de bovino preto contra céu azul
+cow/flickr_6434224147.jpg  # difícil: Arame farpado cruzando a cara, luz fraca
+cow/flickr_7180902804.jpg  # difícil: Rebanho colado à lente, muita oclusão
+cow/flickr_7443537894.jpg  # Vaca preta e branca deitada
+cow/flickr_7815264142.jpg  # Boi vermelho puxado por homem em estrada de terra
+cow/flickr_8183766228.jpg  # Vaca inteira em 1º plano, outras atrás
+cow/flickr_9325662885.jpg  # Parda Suíça e bezerro deitado, montanha
+cow/flickr_9486349067.jpg  # Bezerro creme em close
+cow/flickr_10113852926.jpg  # White Park de chifres longos, close em pasto
+cow/flickr_10120423313.jpg  # 2 Charolês, grande-angular, castelo e vale ao fundo
+cow/flickr_13950908853.jpg  # Vaca marrom inteira, drone no quadro, HDR forte
+cow/flickr_13982320375.jpg  # Vaca preta em estábulo, atrás de barra
+cow/flickr_28400635211.jpg  # difícil: Contraluz no pôr do sol
+cow/flickr_30795304674.jpg  # difícil: Neblina, quase monocromática, 2 bovinos entre árvores
+
+# --- dog ---
+dog/flickr_5164287.jpg  # Mestiço de rottweiler no gramado
+dog/flickr_11889679.jpg  # 3 shelties num deck, com bola
+dog/flickr_24608422.jpg  # 2 beagles sobrepostos, flash
+dog/flickr_92290653.jpg  # difícil: Dachshund com flash, coberto por manta
+dog/flickr_131841577.jpg  # Setter irlandês na neve, de perfil
+dog/flickr_142520422.jpg  # Bichon branco no asfalto
+dog/flickr_167998408.jpg  # Vira-lata na areia entre cadeiras de vime
+dog/flickr_261837578.jpg  # 2 goldens molhados na praia
+dog/flickr_421056393.jpg  # Spaniel bretão na calçada, de guia
+dog/flickr_524823968.jpg  # Filhote de maltês, piso de madeira
+dog/flickr_537819971.jpg  # Labrador amarelo no gramado
+dog/flickr_859815960.jpg  # Cão preto de pelo crespo no gramado
+dog/flickr_1999099304.jpg  # difícil: Corgi em P&B, rua à noite
+dog/flickr_2412810765.jpg  # Shiba deitado numa toalha rosa
+dog/flickr_2525830961.jpg  # difícil: 3 cães na neve, sobrepostos
+dog/flickr_2526678648.jpg  # difícil: 2 cães sobrepostos num pátio
+dog/flickr_2675133924.jpg  # Ângulo baixo, pata desfocada na frente
+dog/flickr_3027593391.jpg  # Mestiço de pastor, piso de pedra
+dog/flickr_3187192575.jpg  # difícil: Foto antiga em P&B, pug no colo
+dog/flickr_3317466278.jpg  # Pastor alemão de perfil, cabeça
+dog/flickr_4442330781.jpg  # Cão ruivo pulando, vista de cima
+dog/flickr_4846858996.jpg  # difícil: Aussie merle em movimento, borrado
+dog/flickr_5052728523.jpg  # 2 cães de guia num evento, com pessoas
+dog/flickr_5172102774.jpg  # Terrier interno, vista de cima
+dog/flickr_5245317420.jpg  # Pitbull saindo do canil
+dog/flickr_5245317540.jpg  # difícil: Cão atrás de grade, oclusão forte
+dog/flickr_5323961120.jpg  # Dobermann correndo no gramado
+dog/flickr_5652378309.jpg  # Cão de rua deitado em frente a uma loja
+dog/flickr_5889223652.jpg  # Cão peludo deitado na porta
+dog/flickr_6053652632.jpg  # Spitz islandês, retrato
+dog/flickr_6177938643.jpg  # difícil: Chihuahua no colo, cômodo escuro
+dog/flickr_6216762636.jpg  # Kelpie num tapete vermelho
+dog/flickr_6782796389.jpg  # difícil: Cão idoso escuro no capim seco
+dog/flickr_6811487956.jpg  # Pitbull caramelo numa poltrona laranja
+dog/flickr_8407296195.jpg test  # difícil: Labrador preto no pasto, lembra bezerro
+dog/flickr_8691660734.jpg  # Beagle, retrato no gramado
+dog/flickr_16120825474.jpg  # difícil: Terrier no capim alto, parcialmente oculto
+dog/flickr_16540146562.jpg  # Vira-lata caramelo no gramado
+dog/flickr_32255598460.jpg  # Schnauzer de casaco azul na neve
+dog/flickr_44980956602.jpg test  # difícil: Dálmata e cão tricolor na neve

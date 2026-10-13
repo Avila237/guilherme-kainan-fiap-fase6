@@ -1,0 +1,8 @@
+# Dataset da Fase 6 (vaca x cachorro) para o YOLOv5.
+# O notebook copia o dataset para /content/dataset no Colab; ajuste `path` se rodar em outro lugar.
+path: /content/dataset
+train: images/train
+val: images/val
+test: images/test
+nc: 2
+names: ['cow', 'dog']  # a ordem define os IDs: cow = 0, dog = 1 (igual ao labels.txt do Make Sense)

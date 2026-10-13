@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+
+# Cache e candidatas geradas pelo scripts/collect_images.py
+.cache/
+dataset/candidates/
+
+# Cache de rótulos gerado pelo YOLOv5
+*.cache
