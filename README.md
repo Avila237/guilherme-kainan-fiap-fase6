@@ -10,7 +10,7 @@ A FarmTech Solutions expandiu seus serviços de IA para saúde animal e seguran�
 | Entrega | O que é | Onde está |
 |---|---|---|
 | 1 | YOLOv5 customizado para vaca e cachorro, com treinos de 30 e 60 épocas comparados | [Notebook da Entrega 1](notebooks/NomeCompleto_rmXXXXX_pbl_fase6.ipynb) · [Abrir no Colab](https://colab.research.google.com/github/Avila237/guilherme-kainan-fiap-fase6/blob/main/notebooks/NomeCompleto_rmXXXXX_pbl_fase6.ipynb) |
-| 2 | Comparação com o YOLO pré-treinado e com uma CNN treinada do zero | Em desenvolvimento |
+| 2 | Comparação com o YOLO pré-treinado e com uma CNN treinada do zero | [Notebook da Entrega 2](notebooks/NomeCompleto_rmXXXXX_pbl_fase6_entrega2.ipynb) · [Abrir no Colab](https://colab.research.google.com/github/Avila237/guilherme-kainan-fiap-fase6/blob/main/notebooks/NomeCompleto_rmXXXXX_pbl_fase6_entrega2.ipynb) |
 
 **Vídeo de demonstração:** em breve.
 
