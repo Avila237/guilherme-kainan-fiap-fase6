@@ -1,7 +1,7 @@
 # FarmTech Solutions · Visão computacional com YOLO
 
 **FIAP · Inteligência Artificial · Fase 6**
-Dupla: Guilherme Ávila (RM XXXXX) e Kainan (RM XXXXX)
+Dupla: Guilherme Ávila (RM 571294) e Kainan (RM 570594)
 
 A FarmTech Solutions expandiu seus serviços de IA para saúde animal e segurança de propriedades rurais. Neste projeto, treinamos um detector de objetos que localiza e diferencia **vacas** e **cachorros** em fotos, e mostramos ao cliente como o sistema se comporta com imagens que ele nunca viu.
 
