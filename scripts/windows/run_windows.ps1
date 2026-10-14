@@ -10,11 +10,15 @@
 .PARAMETER Dir
     Pasta do projeto usada no setup. Padrão: %USERPROFILE%\fiap-fase6
 
+.PARAMETER Notebook
+    Nome do notebook em notebooks\ a executar. Padrão: Entrega1.ipynb (use Entrega2.ipynb para a Entrega 2)
+
 .EXAMPLE
     powershell -ExecutionPolicy Bypass -File run_windows.ps1
 #>
 param(
-    [string]$Dir = (Join-Path $HOME "fiap-fase6")
+    [string]$Dir = (Join-Path $HOME "fiap-fase6"),
+    [string]$Notebook = "Entrega1.ipynb"
 )
 
 $ErrorActionPreference = "Stop"  # qualquer erro interrompe o script
@@ -22,19 +26,19 @@ $ErrorActionPreference = "Stop"  # qualquer erro interrompe o script
 $Python = Join-Path $Dir ".venv\Scripts\python.exe"  # Python do ambiente virtual criado pelo setup
 if (-not (Test-Path $Python)) { Write-Host "Ambiente não encontrado em $Dir. Rode o setup_windows.ps1 antes." -ForegroundColor Red; exit 1 }
 
-# Notebook da entrega: o único .ipynb em notebooks\ que ainda não é uma cópia executada
-$Notebooks = @(Get-ChildItem (Join-Path $Dir "notebooks") -Filter "*.ipynb" | Where-Object { $_.Name -notlike "*_executado.ipynb" })
-if ($Notebooks.Count -ne 1) { Write-Host "Esperado 1 notebook em notebooks\, encontrados $($Notebooks.Count)." -ForegroundColor Red; exit 1 }
-$Notebook = $Notebooks[0]
-$Output = $Notebook.BaseName + "_executado.ipynb"
+# Notebook a executar, dentro de notebooks\ (padrão: Entrega 1)
+$NotebookPath = Join-Path $Dir "notebooks\$Notebook"
+if (-not (Test-Path $NotebookPath)) { Write-Host "Notebook não encontrado: $NotebookPath" -ForegroundColor Red; exit 1 }
+$NotebookFile = Get-Item $NotebookPath
+$Output = $NotebookFile.BaseName + "_executado.ipynb"
 
-Write-Host "Executando $($Notebook.Name). O progresso do treino aparece só no fim; acompanhe a GPU com 'nvidia-smi' em outra janela." -ForegroundColor Cyan
+Write-Host "Executando $($NotebookFile.Name). O progresso do treino aparece só no fim; acompanhe a GPU com 'nvidia-smi' em outra janela." -ForegroundColor Cyan
 $start = Get-Date
 # Executa a partir da pasta do notebook, como o Jupyter faria; sem limite de tempo por célula
-& $Python -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 --output $Output $Notebook.FullName
+& $Python -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 --output $Output $NotebookFile.FullName
 if ($LASTEXITCODE -ne 0) { Write-Host "A execução falhou. A mensagem de erro está acima." -ForegroundColor Red; exit 1 }
 
 $elapsed = (Get-Date) - $start
 Write-Host ("`nConcluído em {0:N0} min. Notebook executado:" -f $elapsed.TotalMinutes) -ForegroundColor Green
-Write-Host "    $(Join-Path $Notebook.DirectoryName $Output)"
+Write-Host "    $(Join-Path $NotebookFile.DirectoryName $Output)"
 Write-Host "Envie esse arquivo para o Guilherme."

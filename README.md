@@ -9,8 +9,8 @@ A FarmTech Solutions expandiu seus serviços de IA para saúde animal e seguran�
 
 | Entrega | O que é | Onde está |
 |---|---|---|
-| 1 | YOLOv5 customizado para vaca e cachorro, com treinos de 30 e 60 épocas comparados | [Notebook da Entrega 1](notebooks/NomeCompleto_rmXXXXX_pbl_fase6.ipynb) · [Abrir no Colab](https://colab.research.google.com/github/Avila237/guilherme-kainan-fiap-fase6/blob/main/notebooks/NomeCompleto_rmXXXXX_pbl_fase6.ipynb) |
-| 2 | Comparação com o YOLO pré-treinado e com uma CNN treinada do zero | [Notebook da Entrega 2](notebooks/NomeCompleto_rmXXXXX_pbl_fase6_entrega2.ipynb) · [Abrir no Colab](https://colab.research.google.com/github/Avila237/guilherme-kainan-fiap-fase6/blob/main/notebooks/NomeCompleto_rmXXXXX_pbl_fase6_entrega2.ipynb) |
+| 1 | YOLOv5 customizado para vaca e cachorro, com treinos de 30 e 60 épocas comparados | [Notebook da Entrega 1](notebooks/Entrega1.ipynb) · [Abrir no Colab](https://colab.research.google.com/github/Avila237/guilherme-kainan-fiap-fase6/blob/main/notebooks/Entrega1.ipynb) |
+| 2 | Comparação com o YOLO pré-treinado e com uma CNN treinada do zero | [Notebook da Entrega 2](notebooks/Entrega2.ipynb) · [Abrir no Colab](https://colab.research.google.com/github/Avila237/guilherme-kainan-fiap-fase6/blob/main/notebooks/Entrega2.ipynb) |
 
 **Vídeo de demonstração:** em breve.
 
@@ -30,7 +30,7 @@ powershell -ExecutionPolicy Bypass -File setup_windows.ps1
 powershell -ExecutionPolicy Bypass -File "$HOME\fiap-fase6\scripts\windows\run_windows.ps1"
 ```
 
-O `setup_windows.ps1` instala o que faltar (Git, Python 3.12, PyTorch com CUDA 12.6, YOLOv5 e Jupyter) em `%USERPROFILE%\fiap-fase6` e confirma que a GPU foi reconhecida. O `run_windows.ps1` executa o notebook inteiro e salva a cópia com as saídas em `notebooks\<nome>_executado.ipynb`. O notebook detecta sozinho se há GPU NVIDIA, GPU Apple (MPS) ou só CPU.
+O `setup_windows.ps1` instala o que faltar (Git, Python 3.12, PyTorch com CUDA 12.6, YOLOv5 e Jupyter) em `%USERPROFILE%\fiap-fase6` e confirma que a GPU foi reconhecida. O `run_windows.ps1` executa a Entrega 1 inteira (para a Entrega 2, acrescente `-Notebook Entrega2.ipynb` ao comando) e salva a cópia com as saídas em `notebooks\<nome>_executado.ipynb`. O notebook detecta sozinho se há GPU NVIDIA, GPU Apple (MPS) ou só CPU.
 
 ## Estrutura
 
